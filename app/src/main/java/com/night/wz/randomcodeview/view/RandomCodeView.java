@@ -71,8 +71,8 @@ public class RandomCodeView extends View {
             setMeasuredDimension(widthSpecSize, 100);
         }
 
-        mHeight = getHeight();
-        mWidth = getWidth();
+        mHeight = getMeasuredHeight();
+        mWidth = getMeasuredWidth();
         mTextSize = (int) ((float) mWidth / 4.5);
         //如果高度小于字体大小，则字体高度为0.5倍的view高度，防止字体超出view大小
         if (mHeight < mTextSize) {
@@ -84,9 +84,6 @@ public class RandomCodeView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (mHeight == 0 || mWidth == 0) {
-            return;
-        }
 
         //先初始化字体大小，下一步初始化随机位置
         //去锯齿
