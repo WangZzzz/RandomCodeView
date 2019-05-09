@@ -11,21 +11,6 @@ import android.view.View;
 import java.util.Random;
 
 
-/**
- * <br>
- * FIREFLY
- * <p>
- * com.example.wz.anytestdemo.view
- * 随机验证码
- *
- * @author wangzhe
- * @version 3.1.0
- * @date 2016/12/14 15:20
- * @api 6
- * <br>
- * CMBC-版权所有
- * <br>
- */
 public class RandomCodeView extends View {
     private static final String TAG = RandomCodeView.class.getSimpleName();
 
